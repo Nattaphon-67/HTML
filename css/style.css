@@ -1,82 +1,183 @@
-/*Global Stlyes*/
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
-html {
-  scroll-padding-top: 100px;
-  scroll-behavior: smooth;
+.tooltip-container {
+  .tooltip-container {
+    position: relative;
+    display: inline-block;
+  }
 }
 body {
-  font-family: Arial, sans-serif;
+  font-family: sans-serif;
   line-height: 1.6;
-  background-color: #a76363;
+  background-color: #a16c79;
   color: #333;
 }
-/*components*/
-.container {
-  max-width: 1200px;
-  margin: 200px auto 40px auto;
-  padding: 20px;
-  background-color: #fff;
-}
-.badge {
-  background-color: #a85f76;
+
+/* Header */
+.header {
+  background-color: #4a9dbd;
+  padding: 40px;
+  text-align: center;
   color: white;
-  padding: 4px 8px;
-  border-radius: 4px;
-  font-size: 12px;
+}
+
+.header h1 {
+  font-size: 24px;
   font-weight: bold;
 }
-.pre {
-}
-.code {
-}
-.card {
-  background-color: #f4f4f4;
-  margin-bottom: 20px;
+/* Navigation Bar */
+.nav-bar {
+  background-color: white;
   padding: 20px;
-  border-radius: 10px;
-}
-.note {
-}
-.card.module-1 {
-  border-top: 4px solid #a85f76;
-  border-bottom: 4px solid #a85f76;
-}
-.card.module-2 {
-  border-top: 4px solid #a85f76;
-  border-bottom: 4px solid #a85f76;
-}
-.card.module-3 {
-  border-top: 4px solid #a85f76;
-  border-bottom: 4px solid #a85f76;
-}
-.card.module-4 {
-  border-top: 4px solid #a85f76;
-  border-bottom: 4px solid #a85f76;
-}
-/*Group 1 stlyes*/
-.header {
-  background-color: #333;
-  color: #fff;
-  box-shadow: 5px 5px 15px #000;
-  padding: 20px 0;
-
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  position: fixed;
-  top: 0;
-  width: 100%;
+  gap: 16px;
+  margin: 20px auto;
+  max-width: 900px;
+  border-radius: 16px;
+  width: 90%;
 }
-.btn-text-link {
-  list-style: none;
+
+.nav-btn {
+  background-color: #d4e8f7;
+  color: #333;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-weight: 500;
   display: flex;
-  gap: 20px;
+  align-items: center;
+  gap: 8px;
 }
+
+.nav-btn.active {
+  background-color: #ff7950;
+  color: white;
+}
+
+.nav-btn:hover {
+  opacity: 0.9;
+}
+
+/*components*/
+.container {
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 40px;
+  background-color: #a98fd1;
+}
+
+/* Profile Card */
+.profile-card {
+  background-color: #a98fd1;
+  padding: 32px;
+  border-radius: 8px;
+}
+
+.profile-header {
+  display: flex;
+  gap: 32px;
+  margin-bottom: 24px;
+  background-color: #ff7950;
+  padding: 24px;
+  border-radius: 8px;
+  align-items: flex-start;
+}
+
+.profile-info {
+  flex: 1;
+}
+
+.profile-info h2 {
+  color: white;
+  font-size: 18px;
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.profile-info ul {
+  list-style: none;
+  color: white;
+  font-size: 14px;
+}
+
+.profile-info li {
+  margin-bottom: 8px;
+}
+
+.profile-image {
+  width: 220px;
+  height: 220px;
+  flex-shrink: 0;
+  color: rgb(255, 0, 0);
+}
+
+.profile-image img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: 4px solid white;
+  object-fit: cover;
+}
+
+/* Credit Buttons */
+.credit-buttons {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 24px;
+  justify-content: center;
+}
+
+.credit-btn {
+  background-color: #c8e6f7;
+  color: #333;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.credit-btn:hover {
+  background-color: #b0dce8;
+}
+
+/* Total Credit */
+.total-credit {
+  background-color: #d9534f;
+  color: white;
+  padding: 40px;
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  transition: box-shadow 0.3s ease-in-out;
+  box-shadow: 0 0 15px 5px rgba(0, 255, 255, 0.4);
+}
+.total-credit:hover {
+  box-shadow: 0 0 25px 8px rgba(0, 255, 255, 0.6);
+}
+/* Footer */
+.footer {
+  background-color: #4a9dbd;
+  color: white;
+  text-align: center;
+  padding: 16px;
+  font-size: 14px;
+}
+display: flex;
+gap: 20px;
+
 .btn-text-link li a {
   text-decoration: none;
   font-size: 18px;
@@ -110,4 +211,7 @@ body {
 }
 .position .right {
   justify-content: flex-end;
+}
+.position .space-between {
+  justify-content: space-between;
 }

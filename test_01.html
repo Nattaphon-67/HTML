@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>รายงานผลเกรด</title>
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <style>
+  .zoom-text {
+    color: black; /* สีเดิม */
+    font-size: 20px;
+    transition: all 0.3s ease; /* ทำให้เด้งนุ่มนวล */
+    display: inline-block; /* ช่วยให้ transform ทำงานถูกต้อง */
+    background-color: #4a9dbd;
+    padding: 20px;
+    text-align: center;
+    color: white;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+  }
+
+  .zoom-text:hover {
+    color: red; /* เปลี่ยนสีเมื่อเมาส์ชี้ */
+    background-color: #d693a6;
+    transform: scale(1.2); /* ขยายใหญ่ขึ้น 1.2 เท่า */
+  }
+</style>
+    <header class="header">
+        <h1>🧫รายงานผลเกรด</h1>
+    </header>
+    <nav class="nav-bar position space-between">
+        <button class="zoom-text">🕵️‍♀️ข้อมูลส่วนตัว</button>
+        <button class="zoom-text">🔖ผลการเรียน</button>
+        <button class="zoom-text">📞ติดต่อ</button>
+    </nav>
+
+
+    <div class="container">
+        <div class="profile-card">
+            <div class="profile-header">
+                <div class="profile-info">
+                    <h2>Mr.Nattaphon klinjun</h2>
+                    <ul>
+                        <li>📲ID: 674259006</li>
+                        <li>🎻name: ณัฐพล กลิ่นจุ่น</li>
+                        <li>🍋Group: 67/50</li>
+                        <li>👩‍🏫Teacher Advisor: อาจารย์ ดร.อุษณีย์ ภักดีตระกูลวงศ์</li>
+                        <li>📠github: https://github.com/Nattaphon-67</li>
+                    </ul>
+                </div>
+                <div class="profile-image">
+                    <img src="images/1000007034.jpg" alt="Profile Picture" />
+                </div>
+            </div>
+
+            <div class="credit-buttons">
+                <button class="credit-btn">📰ปี 1 เทอม 1: 2.00</button>
+                <button class="credit-btn">📰ปี 1 เทอม 2: 2.22</button>
+                <button class="credit-btn">📰ปี 2 เทอม 1: 2.28</button>
+            </div>
+
+            <!-- Total Credit -->
+            <div class="total-credit">
+                <span>🏆 เครดิตสะสม: 2.5
+                </span>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <p>สงวนลิขสิทธิ์ &copy; 2024 รายงานผลเกรด by Nattaphon klinjun</p>
+        <p>🍩Nakhon Pathom Rajabhat University</p>
+    </footer>
+</body>
+
+</html>
